@@ -1,9 +1,10 @@
+import os
 import random
 import datetime
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, CallbackQueryHandler
 
-TOKEN = "7528291323:AAHqqZ3j87uJIYnLMka2sHitcLUP-WQ_JUk"
+TOKEN = os.getenv("TG_TOKEN")
 
 user_data = {}
 active_games = {}
